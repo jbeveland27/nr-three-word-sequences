@@ -1,0 +1,52 @@
+Processing: src/test/resources/counts.txt
+Phrase                                   | Count  
+==================================================
+five four three                          | 4
+one two three                            | 4
+four three two                           | 3
+two three four                           | 3
+three two one                            | 2
+three four five                          | 2
+two one two                              | 1
+eleven ten nine                          | 1
+one five four                            | 1
+fifteen fifteen fourteen                 | 1
+four three five                          | 1
+thirteen twelve eleven                   | 1
+four five five                           | 1
+four five six                            | 1
+three two five                           | 1
+three four one                           | 1
+two one five                             | 1
+nine ten eleven                          | 1
+twelve thirteen fourteen                 | 1
+four one two                             | 1
+seven eight nine                         | 1
+five five four                           | 1
+two five four                            | 1
+two three one                            | 1
+eight seven six                          | 1
+eight nine ten                           | 1
+one one two                              | 1
+ten eleven twelve                        | 1
+fourteen thirteen twelve                 | 1
+nine eight seven                         | 1
+twelve eleven ten                        | 1
+two one one                              | 1
+five six seven                           | 1
+ten nine eight                           | 1
+thirteen fourteen fifteen                | 1
+six five four                            | 1
+fifteen fourteen thirteen                | 1
+one two one                              | 1
+six seven eight                          | 1
+eleven twelve thirteen                   | 1
+one one one                              | 1
+seven six five                           | 1
+three one two                            | 1
+three five four                          | 1
+fourteen fifteen fifteen                 | 1
+five four five                           | 1
+==================================================
+Finished Processing => src/test/resources/counts.txt
+

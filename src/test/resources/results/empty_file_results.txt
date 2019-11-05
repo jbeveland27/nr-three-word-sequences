@@ -1,0 +1,6 @@
+Processing: src/test/resources/empty_file.txt
+==================================================
+No three word phrases detected.
+==================================================
+Finished Processing => src/test/resources/empty_file.txt
+
