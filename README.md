@@ -131,14 +131,14 @@ By default, a test file within `src/test/resources` is used when running the app
 
 ```bash
 # Build the Docker Image
-docker build -t three-words-app .
+docker build -t nr-three-word-sequences .
 
 # Run the Docker Image - by default it uses one of the test files
 # in the repository
-docker run -it --rm --name three-words-app-running three-words-app
+docker run -it --rm --name nr-three-word-sequences-running nr-three-word-sequences
 
 # Optional - the file used can be overriden by supplying an --args='$file1 $file2 ...' parameter. File must be located in the repository prior to building the image.
-docker run -it --rm --name three-words-app-running three-words-app --args='src/test/resources/war-and-peace.txt src/test/resources/pg_moby_dick.txt'
+docker run -it --rm --name nr-three-word-sequences-running nr-three-word-sequences --args='src/test/resources/war-and-peace.txt src/test/resources/counts.txt'
 ```
 
 ## Running Tests
@@ -166,7 +166,7 @@ You can view the test report by opening the HTML output file, located at `build/
 
 - Currently, file inputs are processed one at a time. A substantial performance improvement could be achieved by running each file on it's own thread, so that there's no waiting to begin processing the next file. I've utilized this approach in the past for similar work and had great results with it.
 
-- Tests that give a better indicator of performance tradeoffs between the two implementations used for input processing.
+- Tests that give a better indicator of performance trade-offs between the two implementations used for input processing.
 
 - Unicode support is lacking due to the nature of the regex that is used to select words. My first pass at utilizing regex for the solution involved trying to strip punctuation out of the current line being processed, but that proved to be error prone and I wasn't confident I was handling all punctuation accurately. The regex handling I landed on tries to detect words, defining words as:
 
